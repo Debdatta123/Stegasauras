@@ -102,7 +102,7 @@
   
               <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
                 <div class="icon1" ><i class="fa fa-check"></i></div>
-                <p class="description" style="margin-left: 40px;">Wait till the hidden cipher and the decrypted message along with the image image are identified</p>
+                <p class="description" style="margin-left: 40px;">Wait till the decoded message and original image are identified</p>
               </div>
   
               <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
@@ -141,7 +141,7 @@
                         <div class="validation"></div>
                       </div>                      
                     </div>                    
-                    <div class="text-center"><button class= "btn-services1 scrollto" type="submit" title="Encode">Decode</button></div>
+                    <div class="text-center"><button class= "btn-services1 scrollto" type="submit">Decode</button></div>
                   </form>
                 </div>
               </div>
@@ -153,17 +153,17 @@
 
       </div>
       {% endif %}
-    </section><!-- #services --> 
-    
-    {% if flag == 1 %}
+      {% if flag == 1 %}
       <div class="container mt-4 mb-4">
-        <p class="text-center">Decode Message:</p>
+        <div class="section-header">
+          <h3>Decoded Message</h3>
+        </div>
         <br>
         <p class="text-center">{{ msg }}</p>
       </div>
     {% endif %}
-
-  </main>
+    </section><!-- #services --> 
+    </main>
 
  <!--==========================
     Footer
@@ -181,9 +181,9 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/encode">Encoder</a></li>
+              <li><a href="/decode">Decoder</a></li>
               
             </ul>
           </div>

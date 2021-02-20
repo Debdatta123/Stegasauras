@@ -102,7 +102,7 @@
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
               <div class="icon1" ><i class="fa fa-check"></i></div>
-              <p class="description" style="margin-left: 40px;">Wait till the encrypted text, the binary representation of the cipher, normalized image and the final image are generated</p>
+              <p class="description" style="margin-left: 40px;">Wait till the final image is generated</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
@@ -145,7 +145,7 @@
                       <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please enter your message" placeholder="Message"></textarea>
                       <div class="validation"></div>
                     </div>
-                    <div class="text-center"><button class= "btn-services1 scrollto" type="submit" title="Encode">Encode</button></div>
+                    <div class="text-center"><button class= "btn-services1 scrollto" type="submit">Encode</button></div>
                   </form>
                 </div>
               </div>
@@ -158,9 +158,11 @@
 
       {% if flag == 1 %}
       <div class="container justify-content-center">
-          <p class="text-center"> Encoded Image : </p> 
-            <img class="justify-content-center" src="data:image/png;base64,{{ string }}" alt="" style="width: 30%; height: 30%;"/>
-            <a href="data:image/png;base64,{{ string }}" download="download.png">Download</a>
+        <div class="section-header">
+          <h3>Encoded Image</h3>
+        </div>
+            <img class="justify-content-center" src="data:image/png;base64,{{ string }}" alt="" style="width: 30%; height: 30%;position: relative;left: 35%;"/>
+            <div class="text-center"><a class= "btn-services1 scrollto" href="data:image/png;base64,{{ string }}" download="download.png">Download Image</a></div>
       </div>
     {% endif %}
       
@@ -185,9 +187,9 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/encode">Encoder</a></li>
+              <li><a href="/decode">Decoder</a></li>
               
             </ul>
           </div>
