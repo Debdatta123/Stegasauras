@@ -122,6 +122,7 @@
       Services Section
     ============================-->
     <section id="services" class="section-bg">
+      {% if flag == 0 %}
       <div class="container">
         <div class="container-fluid">
 
@@ -153,12 +154,18 @@
              
 
       </div>
+      {% endif %}
+
+      {% if flag == 1 %}
+      <div class="container justify-content-center">
+          <p class="text-center"> Original Image : </p> 
+            <img class="justify-content-center" src="data:image/jpg;base64,{{ string }}" alt="" style="width: 30%; height: 30%;"/>
+      </div>
+    {% endif %}
+      
     </section><!-- #services -->   
     
     
-    <section>
-
-    </section>
   </main>
 
  <!--==========================

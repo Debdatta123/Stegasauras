@@ -15,17 +15,20 @@ def home():
 @app.route('/encode', methods=['GET', 'POST'])
 def encode():
     if request.method == 'GET':
-        return render_template('encode.html')
+        flag = 0
+        return render_template('encode.html',flag=flag)
     else:
         image = request.files['file']  
         image_string = base64.b64encode(image.read())
-        print(image_string)
-        return render_template('encode.html')
+        # print(image_string)
+        image_string = image_string.decode("utf-8")
+        flag = 1
+        return render_template('encode.html',flag=flag,string=image_string)
 
 @app.route('/decode', methods=['GET', 'POST'])
 def decode():
     if request.method == 'GET':
-        return render_template('decode.html')
+        return render_template('decode.html',)
 
 
 
