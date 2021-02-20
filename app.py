@@ -29,7 +29,7 @@ def encode():
 		
 		encoded = stegno.encode(image, message)
 
-		base64_encoded = stegno.base64writer(encoded, "jpg")
+		base64_encoded = stegno.base64writer(encoded, "png")
 
 		flag = 1
 		return render_template('encode.html',flag=flag, string = base64_encoded.decode("utf-8"))
@@ -37,19 +37,18 @@ def encode():
 @app.route('/decode', methods=['GET', 'POST'])
 def decode():
 	if request.method == 'GET':
-		return render_template('decode.html',)
+		flag = 0
+		return render_template('decode.html',flag=flag)
 	if request.method == 'POST':
-		image_str = request.files['file']
-		print(image_str)
-
+		image_str = request.files['file'].read()
+		print( request.files['file'])
 		npimg = np.fromstring(image_str, np.uint8)
 		image = cv2.imdecode(npimg, cv2.IMREAD_COLOR)
-
-		print(image[:10])
+		# print(image[:10])
 		message = stegno.decode(image)
-
-		# print(message)
-		return render_template('decode.html',)
+		flag = 1
+		print(message)
+		return render_template('decode.html',flag=flag,msg=message)
 
 
 
