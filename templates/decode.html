@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Stegasauras-Encode</title>
+  <title>Stegasauras-Decode</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/jumpy_dino3.gif" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="static/img/jumpy_dino3.gif" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
@@ -17,17 +17,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
    
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- static/libraries CSS Files -->
+  <link href="static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Stegasauras
@@ -48,14 +48,14 @@
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <h1 class="text-light"><a href="#header"><span>Stegasauras</span></a></h1> -->
-        <a href="#intro" class="scrollto" style="font-family: 'Carter One', cursive;position: relative;right: 1rem;"><img src="img/jumpy_dino3.gif" alt="" class="img-fluid" style="height:4.5rem; width:6rem;position: relative;bottom: 1.2rem;"><p style="position: relative;bottom:4.3rem;left:6.3rem;font-size:1.6rem;color:#444;">STEGASAURAS</p></a>
+        <a href="#intro" class="scrollto" style="font-family: 'Carter One', cursive;position: relative;right: 1rem;"><img src="static/img/jumpy_dino3.gif" alt="" class="img-fluid" style="height:4.5rem; width:6rem;position: relative;bottom: 1.2rem;"><p style="position: relative;bottom:4.3rem;left:6.3rem;font-size:1.6rem;color:#444;">STEGASAURAS</p></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="encode.html">Encoder</a></li>
-          <li><a href="decode.html">Decoder</a></li>
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="/encode">Encoder</a></li>
+          <li><a href="/decode">Decoder</a></li>
           
         </ul>
       </nav><!-- .main-nav -->
@@ -68,7 +68,7 @@
   ============================-->
   <section id="intro" class="clearfix" style="padding-top: 7rem;padding-bottom: 0rem;">
     <header class="section-header">
-        <h3 style="color: aliceblue;">Encoder</h3>
+        <h3 style="color: aliceblue;">Decoder</h3>
         <p style="color: aliceblue;">Steganographic encoder uses steganography techniques to hide a secret message in an image</p>
       </header>
   </section><!-- #intro -->
@@ -91,24 +91,24 @@
           <div class="col-lg-6" style="margin: auto;">
             
             <div class="icon-box wow fadeInUp" style="padding-bottom: 15px;">
-              <div class="icon1"><i class="fa fa-check"></i></div>
-              <p class="description" style="margin-left: 40px;">Upload an image</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s" style="padding-bottom: 15px;">
-              <div class="icon1"><i class="fa fa-check"></i></div>
-              <p class="description" style="margin-left: 40px;">Enter the message to be hidden and press "Encode"</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
-              <div class="icon1" ><i class="fa fa-check"></i></div>
-              <p class="description" style="margin-left: 40px;">Wait till the encrypted text, the binary representation of the cipher, normalized image and the final image are generated</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
-                <div class="icon1" ><i class="fa fa-check"></i></div>
-                <p class="description" style="margin-left: 40px;">Press "Download Image" to download the final image</p>
+                <div class="icon1"><i class="fa fa-check"></i></div>
+                <p class="description" style="margin-left: 40px;">Upload an image that might contain the hidden text</p>
               </div>
+  
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s" style="padding-bottom: 15px;">
+                <div class="icon1"><i class="fa fa-check"></i></div>
+                <p class="description" style="margin-left: 40px;">Press "Decode"</p>
+              </div>
+  
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
+                <div class="icon1" ><i class="fa fa-check"></i></div>
+                <p class="description" style="margin-left: 40px;">Wait till the hidden cipher and the decrypted message along with the image image are identified</p>
+              </div>
+  
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s" style="padding-bottom: 15px;">
+                  <div class="icon1" ><i class="fa fa-check"></i></div>
+                  <p class="description" style="margin-left: 40px;">NOTE: Only those images that have been generated using Stegasauras can be uploaded</p>
+                </div>
 
           </div>
 
@@ -126,7 +126,7 @@
         <div class="container-fluid">
 
             <div class="section-header">
-              <h3>Encode</h3>
+              <h3>Decode</h3>
             </div>
     
             <div class="row wow fadeInUp">
@@ -140,11 +140,7 @@
                         <div class="validation"></div>
                       </div>                      
                     </div>                    
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please enter your message" placeholder="Message"></textarea>
-                      <div class="validation"></div>
-                    </div>
-                    <div class="text-center"><button class= "btn-services1 scrollto" type="submit" title="Encode">Encode</button></div>
+                    <div class="text-center"><button class= "btn-services1 scrollto" type="submit" title="Encode">Decode</button></div>
                   </form>
                 </div>
               </div>
@@ -196,23 +192,23 @@
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/mobile-nav/mobile-nav.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- JavaScript static/libraries -->
+  <script src="static/lib/jquery/jquery.min.js"></script>
+  <script src="static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/lib/easing/easing.min.js"></script>
+  <script src="static/lib/mobile-nav/mobile-nav.js"></script>
+  <script src="static/lib/wow/wow.min.js"></script>
+  <script src="static/lib/waypoints/waypoints.min.js"></script>
+  <script src="static/lib/counterup/counterup.min.js"></script>
+  <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="static/lib/lightbox/js/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src="static/js/main.js"></script>
 
 </body>
 </html>
