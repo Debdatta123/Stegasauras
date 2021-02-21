@@ -128,6 +128,7 @@
 
             <div class="section-header">
               <h3>Decode</h3>
+              <p class="text-center">Select PNG image only. </p>
             </div>
     
             <div class="row wow fadeInUp">
@@ -137,7 +138,7 @@
                   <form action="{{ url_for('decode') }}" method="post" role="form" enctype = "multipart/form-data">
                     <div class="form-row">
                       <div class="form-group col-lg-12">
-                        <input type="file" name="file" class="form-control" id="file" data-rule="required" data-msg="Please upload an image" style="height: 2.75rem;"/>
+                        <input type="file" name="file" class="form-control" id="file" required access="images/*" data-rule="required" data-msg="Please upload an image" style="height: 2.75rem;"/>
                         <div class="validation"></div>
                       </div>                      
                     </div>                    
