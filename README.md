@@ -6,6 +6,9 @@ Image steganography is the process of hiding a secret message within an image su
 Our steganographic encoder conceals any text message in an image in a secure way and sends it without suspicion.
 ### Decoder
 Our steganographic decoder decodes a hidden message from a steganographic image in a secure way.
+## Demo
+
+![](Demo.gif)
 ## Website Link
 Visit Website: https://stegasaurus.herokuapp.com/
 ## Built With
