@@ -13,5 +13,5 @@ Visit Website: https://stegasaurus.herokuapp.com/
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The web framework used
 * [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) - Templating Language for Python
 * [Heroku](https://devcenter.heroku.com/categories/reference) - Used to deploy the application
-* [AES Encrytion](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) - For encrypting message before hiding in Image
+* [AES Encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) - For encrypting message before hiding in Image
 
